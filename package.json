@@ -1,6 +1,6 @@
 {
   "name": "screen-size-vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/screen-size-vue.umd.min.js",
   "description": "This helps you write conditional code based on screen size, or get the screen size value ",
   "author": "kingflamez",

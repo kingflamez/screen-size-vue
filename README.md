@@ -34,7 +34,7 @@ Vue.use(ScreenSize)
 </template>
 ```
 
-## Helpful Methods
+## Getters
 
 1. `$data.$screenSize.breakPoint` is used to get the quick current breakpoint of the screen
 
@@ -50,7 +50,21 @@ Vue.use(ScreenSize)
 
 3. `$data.$screenSize.height` its is used to get the height of the screen in pixels
 
-## Advanced Example
+## Methods
+
+1. `$VHToPX()` - This is helpful for iOS devices, that overlaps when using VH, this can be replaced with this
+
+eg
+
+```vue
+<template>
+  <div :style="`height: ${$VHToPX(100)}`">
+    <h1>{{ $data.$screenSize.width }}px / {{ $data.$screenSize.height }}px</h1>
+    <h1>{{ $data.$screenSize.breakPoint }}</h1>
+  </div>
+</template>
+
+```
 
 > This shows an advanced example of running conditional actions based on the screen size
 

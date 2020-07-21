@@ -36,6 +36,9 @@ const VueScreenSize = {
       } else {
         return this.$data.$breakPoint.xl
       }
+    },
+    $VHToPX(vhHeight) {
+      return `${(vhHeight / 100) * this.$data.$screenSize.height}px`
     }
   },
 
